@@ -4,12 +4,42 @@ import os
 from sympy import symbols, limit
 
 
-a = float(input("Factor of x^5 = "))
-b = float(input("Factor of x^4 = "))
-c = float(input("Factor of x^3 = "))
-d = float(input("Factor of x^2 = "))
-e = float(input("Factor of x^1 = "))
-f = float(input("Factor of x^0 = "))
+a = str(input("Factor of x^5 = "))
+b = str(input("Factor of x^4 = "))
+c = str(input("Factor of x^3 = "))
+d = str(input("Factor of x^2 = "))
+e = str(input("Factor of x^1 = "))
+f = str(input("Factor of x^0 = "))
+
+try:
+     a = float(a)
+except:
+     a = float(a[0]) / float(a[2])
+
+try:
+     b = float(b)
+except:
+     b = float(b[0]) / float(b[2])
+
+try:
+     c = float(c)
+except:
+     c = float(c[0]) / float(c[2])
+
+try:
+     d = float(d)
+except:
+     d = float(d[0]) / float(d[2])
+
+try:
+     e = float(e)
+except:
+     e = float(e[0]) / float(e[2])
+
+try:
+     f = float(f)
+except:
+     f = float(f[0]) / float(f[2])
 
 func = poly1d([a, b, c, d, e, f])
 
@@ -60,7 +90,7 @@ def behaviour_to_infinity():
 
 def axis_intercept():
     print('{:s}'.format('\u0332'.join('Axis intercept')))
-    print(f"The axis intercept is at Py( 0 | {f}\n")
+    print(f"The axis intercept is at Py( 0 | {f})\n")
 
 
 def symmetry():
