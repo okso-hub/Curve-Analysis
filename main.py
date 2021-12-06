@@ -3,6 +3,9 @@ from numpy import poly1d
 import os
 from sympy import symbols, limit
 
+clear = lambda: os.system('clear') if os.name == 'posix' else os.system('cls')
+
+clear()
 
 a = str(input("Factor of x^5 = "))
 b = str(input("Factor of x^4 = "))
@@ -43,7 +46,6 @@ except:
 
 func = poly1d([a, b, c, d, e, f])
 
-clear = lambda: os.system('clear') if os.name == 'posix' else os.system('cls')
 
 newA = (a * 5)
 newB = (b * 4)
@@ -228,7 +230,6 @@ def turning_point():
 
 
 def main():
-    clear()
     range_of_definition()
     behaviour_to_infinity()
     axis_intercept()
