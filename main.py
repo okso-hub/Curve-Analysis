@@ -65,7 +65,7 @@ verynewB = (newnewB * 2)
 verynewC = (newnewC * 1)
 thirdDerivative = poly1d([verynewA, verynewB, newnewC])
 
-print('{:s}'.format('\u0332'.join('Original function')))
+print('\n{:s}'.format('\u0332'.join('Original function')))
 print(func, "\n")
 print('{:s}'.format('\u0332'.join('First derivative')))
 print(firstDerivative, "\n")
@@ -87,7 +87,7 @@ def behaviour_to_infinity():
     beginning = limit(((a)*(x)**5 + (b)*(x)**4 + (c)*(x)**3 + (d)*(x)**2 + (e)*(x)**1 + (f)*(x)**0), x, (-inf))
     ending = limit(((a)*(x)**5 + (b)*(x)**4 + (c)*(x)**3 + (d)*(x)**2 + (e)*(x)**1 + (f)*(x)**0), x, (inf))
 
-    print(f"The graph moves from {beginning} to {ending}.")
+    print(f"The graph moves from {beginning} to {ending}.\n")
 
 
 def axis_intercept():
@@ -230,6 +230,7 @@ def turning_point():
 
 
 def main():
+    clear()
     range_of_definition()
     behaviour_to_infinity()
     axis_intercept()
