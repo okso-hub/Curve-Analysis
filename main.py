@@ -65,8 +65,8 @@ verynewB = (newnewB * 2)
 verynewC = (newnewC * 1)
 thirdDerivative = poly1d([verynewA, verynewB, newnewC])
 
-print('{:s}'.format('\u0332'.join('Original function')))
-print("\n", func, "\n")
+print('\n{:s}'.format('\u0332'.join('Original function')))
+print(func, "\n")
 print('{:s}'.format('\u0332'.join('First derivative')))
 print(firstDerivative, "\n")
 print('{:s}'.format('\u0332'.join('Second derivative')))
@@ -230,6 +230,7 @@ def turning_point():
 
 
 def main():
+    clear()
     range_of_definition()
     behaviour_to_infinity()
     axis_intercept()
