@@ -35,30 +35,30 @@ Factor of x^3 = 0
 Factor of x^2 = -19
 Factor of x^1 = 0
 Factor of x^0 = 48
+
 O̲r̲i̲g̲i̲n̲a̲l̲ ̲f̲u̲n̲c̲t̲i̲o̲n
    4      2
-1 x - 19 x + 48 
+1 x - 19 x + 48
 
 F̲i̲r̲s̲t̲ ̲d̲e̲r̲i̲v̲a̲t̲i̲v̲e
    3
-4 x - 38 x 
+4 x - 38 x
 
 S̲e̲c̲o̲n̲d̲ ̲d̲e̲r̲i̲v̲a̲t̲i̲v̲e
     2
-12 x - 38 
+12 x - 38
 
 T̲h̲i̲r̲d̲ ̲d̲e̲r̲i̲v̲a̲t̲i̲v̲e
- 
-24 x 
 
-
+24 x
 R̲a̲n̲g̲e̲ ̲o̲f̲ ̲d̲e̲f̲i̲n̲i̲t̲i̲o̲n
 D = R (Real numbers)
 
 B̲e̲h̲a̲v̲i̲o̲u̲r̲ ̲t̲o̲ ̲i̲n̲f̲i̲n̲i̲t̲y
 The graph moves from oo to oo.
+
 A̲x̲i̲s̲ ̲i̲n̲t̲e̲r̲c̲e̲p̲t
-The axis intercept is at Py( 0 | 48.0
+The axis intercept is at Py( 0 | 48.0)
 
 S̲y̲m̲m̲e̲t̲r̲y
 The graph is axially symmetric to the y axis, since all exponents of the variable x are even.
@@ -67,12 +67,12 @@ Z̲e̲r̲o̲p̲o̲i̲n̲t̲s
 zp1: -4.0000000000000036
 zp2: 3.9999999999999996
 zp3: -1.7320508075688779
-zp4: 1.7320508075688772 
+zp4: 1.7320508075688772
 
 E̲x̲t̲r̲e̲m̲a
 E1: [-3.082207001484488, -42.25]
 E2: [3.0822070014844885, -42.25]
-E3: [0.0, 48.0] 
+E3: [0.0, 48.0]
 
 T̲u̲r̲n̲i̲n̲g̲ ̲p̲o̲i̲n̲t̲s
 TP1: [-1.7795130420052185, -2.1388888888888857]
