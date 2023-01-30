@@ -52,27 +52,27 @@ newB = (b * 4)
 newC = (c * 3)
 newD = (d * 2)
 newE = (e * 1)
-firstDerivative = poly1d([newA, newB, newC, newD, newE])
+first_derivative = poly1d([newA, newB, newC, newD, newE])
 
 newnewA = (newA * 4)
 newnewB = (newB * 3)
 newnewC = (newC * 2)
 newnewD = (newD * 1)
-secondDerivative = poly1d([newnewA, newnewB, newnewC, newnewD])
+second_derivative = poly1d([newnewA, newnewB, newnewC, newnewD])
 
 verynewA = (newnewA * 3)
 verynewB = (newnewB * 2)
 verynewC = (newnewC * 1)
-thirdDerivative = poly1d([verynewA, verynewB, newnewC])
+third_derivative = poly1d([verynewA, verynewB, newnewC])
 
 print('\n{:s}'.format('\u0332'.join('Original function')))
 print(func, "\n")
 print('{:s}'.format('\u0332'.join('First derivative')))
-print(firstDerivative, "\n")
+print(first_derivative, "\n")
 print('{:s}'.format('\u0332'.join('Second derivative')))
-print(secondDerivative, "\n")
+print(second_derivative, "\n")
 print('{:s}'.format('\u0332'.join('Third derivative')))
-print(thirdDerivative, "\n")
+print(third_derivative, "\n")
 
 
 def range_of_definition():
@@ -92,7 +92,7 @@ def behaviour_to_infinity():
 
 def axis_intercept():
     print('{:s}'.format('\u0332'.join('Axis intercept')))
-    print(f"The axis intercept is at Py( 0 | {f})\n")
+    print(f"The axis intercept is at Py( 0 | {f} )\n")
 
 
 def symmetry():
@@ -100,15 +100,15 @@ def symmetry():
 
     try:
          if ((b or d) != 0) and ((a or c or e) != 0):
-              print("The graph is neither axially symmetric to the y-axis nor point-symmetric to the origin, since not all exponents of the variable x are even or odd.\n")
+               print("The graph is neither axially symmetric to the y-axis nor point-symmetric to the origin, since not all exponents of the variable x are even or odd.\n")
 
          elif ((b or d) != 0) and ((a and c and d) == 0):
-                   print("The graph is axially symmetric to the y axis, since all exponents of the variable x are even.\n")
+               print("The graph is axially symmetric to the y axis, since all exponents of the variable x are even.\n")
          
          elif ((b and d) == 0) and ((a or c or d) != 0):
-                   print("The graph is point symmetric to the origin, since all exponents of the variable x are odd.\n")
+               print("The graph is point symmetric to the origin, since all exponents of the variable x are odd.\n")
          else:
-              print("No Symmetrie.\n")
+               print("No symmetry.\n")
     except:
          print("Error")
 
@@ -150,7 +150,7 @@ def zero_points():
 def extrema():
     print('{:s}'.format('\u0332'.join('Extrema')))
     
-    solutions = firstDerivative.r
+    solutions = first_derivative.r
 
     if a != 0:
          zp1, zp2, zp3, zp4 = solutions[0], solutions[1], solutions[2], solutions[3]
@@ -196,10 +196,10 @@ def extrema():
          print("No extrema.\n")
 
 
-def turning_point():
+def turning_points():
     print('{:s}'.format('\u0332'.join('Turning points')))
 
-    solutions = secondDerivative.r
+    solutions = second_derivative.r
 
     if (a != 0):
          zp1, zp2, zp3 = solutions[0], solutions[1], solutions[2]
@@ -237,7 +237,7 @@ def main():
     symmetry()
     zero_points()
     extrema()
-    turning_point()
+    turning_points()
 
 
 if __name__ == '__main__':
