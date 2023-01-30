@@ -228,17 +228,3 @@ def turning_points():
     elif (a == 0) and (b == 0) and (c == 0):
          print("No turning points.\n")
 
-
-def main():
-    clear()
-    range_of_definition()
-    behaviour_to_infinity()
-    axis_intercept()
-    symmetry()
-    zero_points()
-    extrema()
-    turning_points()
-
-
-if __name__ == '__main__':
-    main()
