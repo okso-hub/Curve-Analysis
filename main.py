@@ -29,16 +29,31 @@ def split_into_factors(func):
         if "-" in i:
             continue
         if "x^5" in i:
-            a = int(i.split("x")[0])
+            try:
+                a = int(i.split("x")[0])
+            except:
+                a = 1
         if "x^4" in i:
-            b = int(i.split("x")[0])
+            try:
+                b = int(i.split("x")[0])
+            except:
+                b = 1
         if "x^3" in i:
-            c = int(i.split("x")[0])
+            try:
+                c = int(i.split("x")[0])
+            except:
+                c = 1
         if "x^2" in i:
-            d = int(i.split("x")[0])
+            try:
+                d = int(i.split("x")[0])
+            except:
+                d = 1
         if "x^1" in i:
-            e = int(i.split("x")[0])
-        if "x" not in i:
+            try:
+                e = int(i.split("x")[0])
+            except:
+                e = 1
+        if "x" not in i and i != "+" and i != "-":
             f = int(i)
 
 
