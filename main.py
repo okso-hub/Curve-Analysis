@@ -7,7 +7,7 @@ window = Tk()
 Label(window, text="Enter function ").grid(row=0)
 entry = Entry(window, )
 entry.grid(row=0, column=1)
-entry.insert(0, "f(x) = 5x^5 - 4x^4 - 3x^3")
+entry.insert(0, "f(x) = ")
 
 
 # get the data from entry widget
