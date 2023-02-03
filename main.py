@@ -7,7 +7,7 @@ window = Tk()
 Label(window, text="Enter function ").grid(row=0)
 entry = Entry(window, )
 entry.grid(row=0, column=1)
-entry.insert(0, "f(x) = ")
+entry.insert(0, "f(x) = 5x^5 - 4x^4 - 3x^3")
 
 
 # get the data from entry widget
@@ -23,11 +23,15 @@ def split_into_factors(func):
     ls.remove("f(x)")
     ls.remove("=")
 
+    j = 0
     for i in ls:
         if "+" in i:
             continue
-        if "-" in i:
-            continue
+        if "-" in i and "x" not in i:
+            try:
+                ls[j+1] = f"-{ls[j+1]}"
+            except:
+                pass
         if "x^5" in i:
             try:
                 a = int(i.split("x")[0])
@@ -56,6 +60,7 @@ def split_into_factors(func):
         if "x" not in i and i != "+" and i != "-":
             f = int(i)
 
+        j += 1
 
 def generate():
     split_into_factors(get_data())
