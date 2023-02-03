@@ -1,5 +1,7 @@
 from tkinter import *
 from functions import *
+import numpy as np
+from matplotlib import pyplot as plt
 
 window = Tk()
 
@@ -64,14 +66,6 @@ def split_into_factors(func):
 
 def generate():
     split_into_factors(get_data())
-    # get_derivatives(a, b, c, d, e, f)
-    # range_of_definition()
-    # behaviour_to_infinity(a, b, c, d, e, f)
-    # axis_intercept(f)
-    # symmetry(a, b, c, d, e)
-    # zero_points(a, b, c, d, e)
-    # extrema(a, b, c, d, e, f)
-    # turning_points(a, b, c, d, e, f)
 
     derivatives = Label(window, text=f"{get_derivatives(a, b, c, d, e, f)}", anchor="w")
     derivatives.grid(row=4, column=0)
@@ -96,6 +90,19 @@ def generate():
 
     turning_pts = Label(window, text=f"{turning_points(a, b, c, d, e, f)}", anchor="w")
     turning_pts.grid(row=11, column=0)
+
+    p = np.poly1d([a, b, c, d, e, f])
+    print(p)
+    x = np.linspace(-50, 50, num=200)
+    y = p(x)
+    
+    plt.xlabel('x axis')
+    plt.ylabel('y axis')
+    plt.grid(alpha=.4,linestyle='--')
+
+    plt.plot(x, y, label=f"Graph of {p}")
+    plt.savefig("graph.png")
+
 
 
 

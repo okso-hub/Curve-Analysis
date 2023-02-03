@@ -163,7 +163,6 @@ def extrema(a, b, c, d, e, f):
 
 
 def turning_points(a, b, c, d, e, f):
-    print('{:s}'.format('\u0332'.join('Turning points')))
 
     solutions = second_derivative.r
 
