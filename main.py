@@ -7,7 +7,7 @@ window = Tk()
 
 # Entry field for function (e.g. f(x) = x^2)
 Label(window, text="Enter function ").grid(row=0)
-entry = Entry(window, )
+entry = Entry(window)
 entry.grid(row=0, column=1)
 entry.insert(0, "f(x) = ")
 

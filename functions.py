@@ -84,13 +84,13 @@ def symmetry(a, b, c, d, e):
 
     try:
          if ((b or d) != 0) and ((a or c or e) != 0):
-               return "The graph is neither axially symmetric to the y-axis nor point-symmetric to the origin, since not all exponents of the variable x are even or odd."
+               return "The graph is neither axially symmetric to the y-axis nor point-symmetric to the origin, \nsince not all exponents of the variable x are even or odd."
 
          elif ((b or d) != 0) and ((a and c and d) == 0):
-               return "The graph is axially symmetric to the y axis, since all exponents of the variable x are even."
+               return "The graph is axially symmetric to the y axis, \nsince all exponents of the variable x are even."
          
          elif ((b and d) == 0) and ((a or c or d) != 0):
-               return "The graph is point symmetric to the origin, since all exponents of the variable x are odd."
+               return "The graph is point symmetric to the origin, \nsince all exponents of the variable x are odd."
          else:
                return "No symmetry."
     except:
